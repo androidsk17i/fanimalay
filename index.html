@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Prompt Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI Prompt Generator</h1>
+        
+        <div class="generator-form">
+            <div class="form-group">
+                <label for="subjectCount">Subject Count:</label>
+                <select id="subjectCount">
+                    <option value="single">Single Subject</option>
+                    <option value="two">Two Subjects</option>
+                    <option value="three">Three Subjects</option>
+                    <option value="small group">Small Group (4-5)</option>
+                    <option value="large group">Large Group (6-8)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="scene">Scene Setting:</label>
+                <select id="scene">
+                    <option value="">Select a scene...</option>
+                    <option value="bustling market">Bustling Market</option>
+                    <option value="serene garden">Serene Garden</option>
+                    <option value="busy street">Busy Street</option>
+                    <option value="family gathering">Family Gathering</option>
+                    <option value="park">Park</option>
+                    <option value="mosque courtyard">Mosque Courtyard</option>
+                    <option value="modern shopping mall">Modern Shopping Mall</option>
+                    <option value="traditional kampung house">Traditional Kampung House</option>
+                    <option value="beachside">Beachside</option>
+                    <option value="night market">Night Market</option>
+                    <option value="food court">Food Court</option>
+                    <option value="prayer room">Prayer Room</option>
+                    <option value="community center">Community Center</option>
+                    <option value="local cafe">Local Cafe</option>
+                    <option value="riverside">Riverside</option>
+                    <option value="train station">Train Station</option>
+                    <option value="grocery store">Grocery Store</option>
+                    <option value="wedding ceremony">Wedding Ceremony</option>
+                    <option value="school event">School Event</option>
+                    <option value="public library">Public Library</option>
+                    <option value="neighborhood playground">Neighborhood Playground</option>
+                    <option value="community garden">Community Garden</option>
+                    <option value="local restaurant">Local Restaurant</option>
+                    <option value="morning wet market">Morning Wet Market</option>
+                    <option value="village fair">Village Fair</option>
+                    <option value="cultural festival">Cultural Festival</option>
+                    <option value="ramadan bazaar">Ramadan Bazaar</option>
+                    <option value="cooking class">Cooking Class</option>
+                    <option value="craft workshop">Craft Workshop</option>
+                    <option value="community gathering">Community Gathering</option>
+                    <option value="chaotic food court during lunch rush">Chaotic Food Court Rush</option>
+                    <option value="overcrowded sale at fashion boutique">Crazy Fashion Sale</option>
+                    <option value="windy durian stall with flying durians">Flying Durian Stall</option>
+                    <option value="slippery wet market floor">Slippery Wet Market</option>
+                    <option value="packed MRT during rush hour">Packed MRT</option>
+                    <option value="middle of flash flood">Flash Flood Chaos</option>
+                    <option value="umbrella turning inside out in storm">Stormy Weather</option>
+                    <option value="trying to cross street with broken traffic light">Broken Traffic Light</option>
+                    <option value="getting stuck in revolving door">Stuck in Revolving Door</option>
+                    <option value="escalator suddenly changing direction">Crazy Escalator</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="action">Action:</label>
+                <select id="action">
+                    <option value="">Select an action...</option>
+                    <option value="slipping on a banana peel">Slipping on Banana Peel</option>
+                    <option value="spilling a drink">Spilling a Drink</option>
+                    <option value="trying to balance a wobbly stack of kuih">Balancing Kuih</option>
+                    <option value="getting tangled in a kite string">Tangled in Kite String</option>
+                    <option value="chasing a runaway chicken">Chasing Chicken</option>
+                    <option value="laughing uncontrollably">Laughing Uncontrollably</option>
+                    <option value="tripping over a curious cat">Tripping Over Cat</option>
+                    <option value="attempting to catch falling groceries">Catching Falling Groceries</option>
+                    <option value="wrestling with an umbrella in the wind">Wrestling with Umbrella</option>
+                    <option value="trying to eat messy durian">Eating Messy Durian</option>
+                    <option value="dancing spontaneously">Dancing Spontaneously</option>
+                    <option value="attempting to take a selfie">Taking Awkward Selfie</option>
+                    <option value="chasing after a flying headscarf">Chasing Flying Headscarf</option>
+                    <option value="juggling multiple shopping bags">Juggling Shopping Bags</option>
+                    <option value="trying to avoid puddle splashes">Avoiding Puddles</option>
+                    <option value="bargaining enthusiastically">Bargaining Enthusiastically</option>
+                    <option value="cooking with flying ingredients">Cooking with Flying Ingredients</option>
+                    <option value="trying to catch falling plates">Catching Falling Plates</option>
+                    <option value="running after a bus">Running After Bus</option>
+                    <option value="attempting to fold a large tablecloth">Folding Large Tablecloth</option>
+                    <option value="trying to open a stubborn jar">Opening Stubborn Jar</option>
+                    <option value="reaching for high shelf items">Reaching High Shelf</option>
+                    <option value="balancing on one foot">Balancing on One Foot</option>
+                    <option value="trying to catch falling fruits">Catching Falling Fruits</option>
+                    <option value="attempting to fix a wardrobe malfunction">Fixing Wardrobe</option>
+                    <option value="dodging playful water splashes">Dodging Water Splashes</option>
+                    <option value="trying to control flying papers">Controlling Flying Papers</option>
+                    <option value="attempting to carry too many things">Carrying Too Many Things</option>
+                    <option value="arranging flowers">Arranging Flowers</option>
+                    <option value="posing with shopping bags">Posing with Shopping Bags</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="mood">Mood/Emotion:</label>
+                <select id="mood">
+                    <option value="">Select a mood...</option>
+                    <option value="funny">Funny</option>
+                    <option value="awkward">Awkward</option>
+                    <option value="embarrassed">Embarrassed</option>
+                    <option value="surprised">Surprised</option>
+                    <option value="lighthearted">Lighthearted</option>
+                    <option value="joyful">Joyful</option>
+                    <option value="excited">Excited</option>
+                    <option value="amused">Amused</option>
+                    <option value="cheerful">Cheerful</option>
+                    <option value="delighted">Delighted</option>
+                    <option value="entertained">Entertained</option>
+                    <option value="giggly">Giggly</option>
+                    <option value="playful">Playful</option>
+                    <option value="silly">Silly</option>
+                    <option value="mischievous">Mischievous</option>
+                    <option value="goofy">Goofy</option>
+                    <option value="carefree">Carefree</option>
+                    <option value="energetic">Energetic</option>
+                    <option value="enthusiastic">Enthusiastic</option>
+                    <option value="gleeful">Gleeful</option>
+                    <option value="happy">Happy</option>
+                    <option value="jolly">Jolly</option>
+                    <option value="lively">Lively</option>
+                    <option value="mirthful">Mirthful</option>
+                    <option value="proud">Proud</option>
+                    <option value="radiant">Radiant</option>
+                    <option value="sheepish">Sheepish</option>
+                    <option value="spirited">Spirited</option>
+                    <option value="vivacious">Vivacious</option>
+                    <option value="whimsical">Whimsical</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="style">Photographic Style:</label>
+                <select id="style">
+                    <option value="">Select a style...</option>
+                    <option value="smartphone photography, natural lighting, 4k uhd">Smartphone Photo</option>
+                    <option value="casual photography, sharp details, natural lighting">Casual Photo</option>
+                    <option value="realistic photo, sharp details, vivid, 4k">Realistic Photo</option>
+                    <option value="candid photography, natural lighting, sharp details">Natural Candid</option>
+                    <option value="amateur DSLR photography, sharp focus">Amateur DSLR</option>
+                    <option value="realistic snapshot, sharp details, natural lighting">Realistic Snapshot</option>
+                    <option value="high resolution photo, natural colors, sharp details">High Resolution</option>
+                    <option value="natural daylight photography, sharp details, realistic">Natural Daylight</option>
+                    <option value="iphone 15 pro photo, sharp details, natural colors">iPhone Photo</option>
+                    <option value="vintage film">Vintage Film</option>
+                    <option value="polaroid">Polaroid</option>
+                    <option value="documentary">Documentary</option>
+                    <option value="street photography">Street Photography</option>
+                    <option value="photojournalistic">Photojournalistic</option>
+                    <option value="lomography">Lomography</option>
+                    <option value="film grain">Film Grain</option>
+                    <option value="35mm film">35mm Film</option>
+                    <option value="medium format">Medium Format</option>
+                    <option value="instant film">Instant Film</option>
+                    <option value="soft focus">Soft Focus</option>
+                    <option value="high contrast">High Contrast</option>
+                    <option value="low contrast">Low Contrast</option>
+                    <option value="saturated colors">Saturated Colors</option>
+                    <option value="muted tones">Muted Tones</option>
+                    <option value="black and white">Black and White</option>
+                    <option value="sepia toned">Sepia Toned</option>
+                    <option value="cross processed">Cross Processed</option>
+                    <option value="light leaks">Light Leaks</option>
+                    <option value="double exposure">Double Exposure</option>
+                    <option value="motion blur">Motion Blur</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="composition">Shot Composition:</label>
+                <select id="composition">
+                    <option value="">Select composition...</option>
+                    <option value="close-up headshot">Close-up Headshot</option>
+                    <option value="portrait shot">Portrait Shot</option>
+                    <option value="half body shot">Half Body Shot</option>
+                    <option value="full body shot">Full Body Shot</option>
+                    <option value="wide shot">Wide Shot</option>
+                    <option value="from behind">From Behind</option>
+                    <option value="low angle shot">Low Angle Shot</option>
+                    <option value="high angle shot">High Angle Shot</option>
+                    <option value="dutch angle">Dutch Angle</option>
+                    <option value="bird's eye view">Bird's Eye View</option>
+                    <option value="worm's eye view">Worm's Eye View</option>
+                    <option value="over the shoulder">Over the Shoulder</option>
+                    <option value="side profile">Side Profile</option>
+                    <option value="three-quarter view">Three-quarter View</option>
+                    <option value="extreme close-up">Extreme Close-up</option>
+                    <option value="medium shot">Medium Shot</option>
+                    <option value="long shot">Long Shot</option>
+                    <option value="establishing shot">Establishing Shot</option>
+                    <option value="candid angle">Candid Angle</option>
+                    <option value="diagonal composition">Diagonal Composition</option>
+                    <option value="symmetrical composition">Symmetrical Composition</option>
+                    <option value="rule of thirds">Rule of Thirds</option>
+                    <option value="center framed">Center Framed</option>
+                    <option value="off-center composition">Off-center Composition</option>
+                    <option value="silhouette">Silhouette</option>
+                    <option value="frame within frame">Frame Within Frame</option>
+                    <option value="leading lines">Leading Lines</option>
+                    <option value="dynamic angle">Dynamic Angle</option>
+                    <option value="environmental portrait">Environmental Portrait</option>
+                    <option value="cinematic framing">Cinematic Framing</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="clothing">Clothing Style:</label>
+                <select id="clothing">
+                    <option value="">Select clothing...</option>
+                    <option value="plain black abaya">Plain Black Abaya</option>
+                    <option value="simple navy blue jubah">Simple Navy Jubah</option>
+                    <option value="modest brown dress">Modest Brown Dress</option>
+                    <option value="basic grey abaya">Basic Grey Abaya</option>
+                    <option value="plain white jubah">Plain White Jubah</option>
+                    <option value="simple maroon dress">Simple Maroon Dress</option>
+                    <option value="modest beige abaya">Modest Beige Abaya</option>
+                    <option value="basic olive green jubah">Basic Olive Jubah</option>
+                    <option value="plain dark blue dress">Plain Dark Blue Dress</option>
+                    <option value="simple cream colored abaya">Simple Cream Abaya</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="elements">Additional Elements:</label>
+                <select id="elements" multiple>
+                    <option value="curious cat">Curious Cat</option>
+                    <option value="elegant handbag">Elegant Handbag</option>
+                    <option value="chaotic background">Chaotic Background</option>
+                    <option value="warm lighting">Warm Lighting</option>
+                    <option value="vibrant colors">Vibrant Colors</option>
+                    <option value="floating food items">Floating Food Items</option>
+                    <option value="scattered papers">Scattered Papers</option>
+                    <option value="flying fabric">Flying Fabric</option>
+                    <option value="morning mist">Morning Mist</option>
+                    <option value="golden hour lighting">Golden Hour Lighting</option>
+                    <option value="street vendors">Street Vendors</option>
+                    <option value="traditional decorations">Traditional Decorations</option>
+                    <option value="hanging lanterns">Hanging Lanterns</option>
+                    <option value="market umbrellas">Market Umbrellas</option>
+                    <option value="steam from food stalls">Steam from Food</option>
+                    <option value="falling leaves">Falling Leaves</option>
+                    <option value="playful shadows">Playful Shadows</option>
+                    <option value="reflection in puddles">Puddle Reflections</option>
+                    <option value="colorful fabrics">Colorful Fabrics</option>
+                    <option value="traditional patterns">Traditional Patterns</option>
+                    <option value="prayer beads">Prayer Beads</option>
+                    <option value="cooking utensils">Cooking Utensils</option>
+                    <option value="market baskets">Market Baskets</option>
+                    <option value="flying birds">Flying Birds</option>
+                    <option value="stray chickens">Stray Chickens</option>
+                    <option value="potted plants">Potted Plants</option>
+                    <option value="hanging clothes">Hanging Clothes</option>
+                    <option value="bicycle passing by">Passing Bicycle</option>
+                    <option value="traditional snacks">Traditional Snacks</option>
+                    <option value="prayer flags">Prayer Flags</option>
+                    <option value="designer accessories">Designer Accessories</option>
+                    <option value="stylish shoes">Stylish Shoes</option>
+                    <option value="modern jewelry">Modern Jewelry</option>
+                </select>
+            </div>
+
+            <div class="button-group">
+                <button id="generateBtn">Generate Prompt</button>
+                <button id="randomBtn">Random Prompt</button>
+            </div>
+
+            <div class="output-container">
+                <h3>Generated Prompt:</h3>
+                <div id="output" class="output"></div>
+                <div class="copy-message" id="copyMessage">Copied to clipboard!</div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>© 2025 androidsk17i. Made with 💖 for my makcik. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html> 
